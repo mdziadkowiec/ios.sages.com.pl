@@ -274,8 +274,6 @@
 
           <p>zapisy otwarte do 24 października do godziny 12:00</p>
 
-          <p><small><i>cennik dostępny wkrótce</i></small></p>
-
           <h2 style="font-weight:200;">
             Zachęcamy do zaglądania na stronę i&nbsp;Twittera wydarzenia gdzie pojawiać się bedą dodatkowe informacje.
           </h2>
@@ -289,6 +287,99 @@
     </article>
   </section>
 
+  <section>
+
+    <h1 class="text-center">Zarezerwuj swoje miejsce już dziś!</h1>
+
+    <br />
+    <br />
+
+    <article class="container">
+
+      <div class="row">
+
+        <div class="col-md-8">
+
+        <form action="email.php" method="post" class="col-md-offset-1 col-md-8">
+
+          <p>
+            <input name="name" placeholder="Imię i Nazwisko" class="form-control" />
+          </p>
+          <p>
+            <input id="email_id" name="email" placeholder="E-mail" class="form-control" />
+          </p>
+          <p>
+            <input id="company_id" name="company" placeholder="Firma" class="form-control" />
+          </p>
+          <p>
+            <input id="phone_id" name="phone" placeholder="Numer telefonu" class="form-control" />
+          </p>
+          <p>
+            <textarea id="content_id" name="message" class="form-control" rows="5">Wiadomość</textarea>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="macuser"> Posiadam własny sprzęt na którym będę pracował
+            </label>
+          </p>
+
+          <p>
+            <input type="submit" value="Zarezerwuj miejsce" class="btn" />
+          </p>
+        </form>
+
+        </div>
+        <div class="col-md-4">
+
+        <table class="table table-striped">
+
+          <thead>
+          <tr>
+            <th>
+              <h3>CENA OD OSOBY: 3300 PLN</h3>
+            </th>
+            <tr>
+              <th>
+                Cena obejmuje:
+              </th>
+            </tr>
+          </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                Uczestnictwo w 3-dniowym szkoleniu
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Lunche
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Materiały szkoleniowe
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Możliwość korzystania ze sprzętu Apple w czasie szkolenia</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Certyfikat ukończenia szkolenia
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+    </article>
+  </section>
+
   <section id="kontakt" class="light">
     <article class="container">
 
@@ -296,7 +387,7 @@
         <h1 class="text-center">Bądźmy w kontakcie!</h1>
         <h2 class="text-center">Zapisz się na newsletter</h2>
       </hgroup>
-  
+
       <div class="bg-subscribe">
         <div class="container-subscribe container">
           <div class="row-subscribe row">
@@ -307,30 +398,13 @@
 
                 <input type="email" name="MERGE0" class="form-control form-flat subscribe-mail hidden-xs" placeholder="Podaj swój adres email">
 
-                <button type="submit" class="btn btn-flat">Zapisz się na newsletter</button>
+                <button type="submit" class="btn btn-flat">Zapisz się</button>
 
               </form>
             </div>
           </div>
         </div>
-      </div>
-
-      <!--      
-      <form action="" method="post" class="col-md-offset-4 col-md-4">
-        <p>
-          <input id="email_id" name="" placeholder="E-mail" class="form-control" />
-        </p>
-        <p>
-          <input id="title_id" name="" placeholder="Temat" class="form-control" />
-        </p>
-        <p>
-          <textarea id="content_id" name="" class="form-control" rows="5">Wiadomość</textarea>
-        </p>
-        <p>
-          <input type="submit" value="Wyślij" class="form-control btn" />
-        </p>
-      </form>
-      -->
+      </div>      
 
     </article>
   </section>
