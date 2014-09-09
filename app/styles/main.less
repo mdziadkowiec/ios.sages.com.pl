@@ -1,0 +1,323 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@icon-font-path: "../fonts/glyphicons/";
+
+@import "../bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "../fonts/font-awesome";
+
+@import "lato/lato.less";
+@lato-font-path: "../fonts/lato";
+
+@import "fonts.less";
+@bebas-font-path: "../fonts/bebas-neue";
+
+@import "centered-menu.less";
+
+
+
+@brand-primary: #428bca;
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+
+@main-color: #0da2d6;
+
+
+body {
+	font-family: "Lato", Georgia; font-weight: 300;
+	color: #636363;
+}
+
+h1 strong {
+	font-weight: 300;
+}
+
+.browsehappy {
+  margin: 0.2em 0; 
+  background: #ccc; 
+  color: #000; 
+  padding: 0.2em 0; 
+}
+
+.jumbotron {
+  margin: 50px auto 0 auto;
+}
+
+header.sages-dark, footer.sages-dark {
+	height: 4em;
+	background: #000;
+}
+
+footer.sages-dark {
+	text-align: center;
+	line-height: 4em;
+}
+
+header.sages-dark img.sages-logo {
+	position: absolute;
+	top: 1em;
+	left: 20%;
+	height: 2em;
+}
+
+img.sages-logo {
+	height: 2em;
+}
+
+section {
+	padding: 2em 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+section.light {
+	color: #fff;
+	background-color: #6dcff6;
+	border-bottom: none;
+}
+
+section.light h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+section.light ul {
+	padding: 2em 0;
+	line-height: 2.5em;
+	font-size: 1.5em;
+}
+
+section.light ul li {
+	margin-left: 4em;
+}
+
+section ul {
+	padding: 2em 0;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+section ul li {
+	margin-left: 2em;
+}
+
+section.dark {
+	color: #fff;
+	background-color: #0da2d6;
+	border-bottom: none;
+}
+
+hgroup#title > *{
+	margin: 0;
+	padding: 0;
+}
+
+#title h1 {
+	font-family: "Bebas Neue Regular";
+	font-weight: normal;
+	font-size: 6em;
+}
+
+#title h2 {
+	font-size: 2.7em;
+	font-weight: 100;
+}
+
+.place {
+	font-weight: 100;
+	font-size: 2.6em;
+}
+
+.app-info {
+	margin-top: 75px;
+}
+
+.app-info .content {
+	margin-bottom: 4em;
+	font-size: .9em;
+	border: 1px solid #e1e1e1;
+}
+
+.app-info .content h3 {
+	font-weight: 200;
+}
+
+.app-info .content ul li {
+	text-align: left;
+}
+
+img.app-icon {
+	margin-top: -75px;
+	width: 150px;
+	height: 150px;
+}
+
+#hero p {
+	margin-top: 1.5em; 
+	font-size: 1.5em;
+}
+
+#hero a {
+	color: #fff;
+}
+
+#korzysci h1 {
+	font-weight: 200;
+}
+
+#apps h1 {
+	font-weight: 100;
+	margin-bottom: 2em;
+}
+
+#tech h1 {
+	font-weight: 100;
+	margin-bottom: 2em;
+}
+
+#tech h3 {
+	font-weight: 200;
+}
+
+#tech .row {
+	margin-bottom: 2em;
+}
+
+#tech img {
+	width: 150px;
+}
+
+#trener h1 {
+	font-weight: 100;
+	margin-bottom: 2em;
+}
+
+#trener article {
+	//background: url('../images/trainer-michal-dziadkowiec.png') left bottom no-repeat;
+}
+
+#trener {
+	padding-bottom: 0;
+}
+
+#trener article {
+	// padding-left: 590px;
+}
+
+#trener img.hero-image {
+
+}
+
+#trener .testimonials {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+#trener .testimonials .opinion {
+	margin-bottom: 1.5em;
+	padding: .5em 1em;
+	border: 1px solid #ccc;
+	line-height: 1.6em;
+	box-shadow: 1px 2px #aaa;
+	background-color: #fff;
+}
+
+#trener .testimonials .opinion p {
+	margin: 0;
+	padding: 0;
+}
+
+#trener p {
+	font-size: 1.2em;
+}
+
+#trener .links ul {
+	float: right;
+	list-style-type: none;
+}
+
+#trener .links ul li {
+	margin: 0 1em 0 0;
+	padding: 0;
+	float: left;
+}
+
+#trener .links ul li a {
+	padding: 0.25em;
+	display: block;
+	text-align: center;
+	width: 1.5em;
+	height: 1.5em;
+	font-size: 2em;
+	// line-height: 1em;
+	color: #fff;
+	background: #7c7c7c;
+	border-radius: 50%;
+}
+
+#trener .links ul li a:hover {
+	background-color: @main-color;
+}
+
+#szkolenie {
+	padding-bottom: 0;
+}
+
+#szkolenie h1 {
+	font-size: 1.6em;
+	font-weight: 200;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+	#korzysci {
+		font-size: 1em;
+	}
+
+	#szkolenie .first-column img {
+		margin: 14em 0 0 7em;
+	}
+}
+#termin h1 {
+	// font-size: 1.6em;
+	font-weight: 200;
+}
+
+#termin p {
+	font-size: 1.4em;
+	padding-bottom: 1em;
+}
+
+#termin strong {
+	color: #000;
+}
+
+#szkolenie article p {
+	font-size: 1.3em;
+}
+
+#kontakt {
+	padding-bottom: 4em;
+}
+
+#kontakt h1 {
+	font-weight: 200;
+	margin-bottom: 2em;
+}
+
+#footer-blue {
+	padding-top: 4em;
+	font-size: 1.3em;
+	color: #c2e8f5;// #86d0ea;
+}
+
+#footer-blue a {
+	color: #c2e8f5;// #86d0ea;
+}
+
+#footer-blue .first-column {
+	margin-right: 1em;
+	border-right: 1px solid #fff;
+}
