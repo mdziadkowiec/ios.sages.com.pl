@@ -289,10 +289,17 @@
 
   <section>
 
-    <h1 class="text-center">Zarezerwuj swoje miejsce już dziś!</h1>
+    <article class="container">
 
-    <br />
-    <br />
+      <div id="map-canvas"></div>
+
+    </article>
+  </section>
+
+
+  <section id="registration">
+
+    <h1 class="text-center">Zarezerwuj swoje miejsce już dziś!</h1>
 
     <article class="container">
 
@@ -383,22 +390,25 @@
   <section id="kontakt" class="light">
     <article class="container">
 
-      <hgroup>
-        <h1 class="text-center">Bądźmy w kontakcie!</h1>
-        <h2 class="text-center">Zapisz się na newsletter</h2>
-      </hgroup>
+      <h1 class="text-center">Zapisz się na newsletter</h1>
 
       <div class="bg-subscribe">
         <div class="container-subscribe container">
           <div class="row-subscribe row">
             <div class="col-subscribe col-sm-8 col-sm-offset-2 wow fadeInRight">
               <form action="http://sages.us7.list-manage.com/subscribe">
-                <input type="hidden" name="u" value="251ae4c50f44545dc0c09288a" />
-                <input type="hidden" name="id" value="00e66147a1" />
 
-                <input type="email" name="MERGE0" class="form-control form-flat subscribe-mail hidden-xs" placeholder="Podaj swój adres email">
+                <div class="row">
 
-                <button type="submit" class="btn btn-flat">Zapisz się</button>
+                  <div class="col-md-8">
+                    <input type="hidden" name="u" value="251ae4c50f44545dc0c09288a" />
+                    <input type="hidden" name="id" value="00e66147a1" />
+                    <input type="email" name="MERGE0" class="form-control form-flat subscribe-mail hidden-xs" placeholder="Podaj swój adres email">
+                  </div>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn form-control">Zapisz się</button>
+                  </div>
+                </div>
 
               </form>
             </div>
@@ -482,5 +492,32 @@
 <script src="bower_components/bootstrap/js/collapse.js"></script>
 <script src="bower_components/bootstrap/js/tab.js"></script>
 <!-- endbuild -->
+
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5HYqOWM5ZBIyMmQbKCMB83HJaLgIzHns&sensor=false">
+</script> 
+
+<script type="text/javascript">
+
+// GOOGLE MAPS  
+  function initialize() {
+  var myLatlng = new google.maps.LatLng(52.224779,20.991185);
+  var mapOptions = {
+    zoom:16,
+    center: myLatlng,
+    scrollwheel: false  
+
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);  
+
+</script>
+
 </body>
 </html>
